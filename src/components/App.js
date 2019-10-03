@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import '../styles/App.scss'
 import { BrowserRouter, Link, Route } from 'react-router-dom'
-const Home = () => <h1>Strona Startowa</h1>
-const News = () => <h1>Aktualnosci</h1>
-const Contact = () => <h1>Kontakt</h1>
+import Home from "./Home.js"
+import Contact from "./Contact.js"
+import Projects from "./Projects.js"
+
 
 function App () {
   return (
@@ -14,20 +14,20 @@ function App () {
           <nav>
             <ul>
               <li>
-                <Link to='/'>Start</Link>
+                <Link to='/'>Home</Link>
               </li>
               <li>
-                <Link to='/news'>Aktualnosci</Link>
+                <Link to='/projects'>Projects</Link>
               </li>
               <li>
-                <Link to='/contact'>Kontakt</Link>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </nav>
         </header>
         <section>
           <Route path='/' exact component={Home} />
-          <Route path='/news' component={News} />
+          <Route path='/projects' component={Projects} />
           <Route path='/contact' component={Contact} />
         </section>
       </div>
