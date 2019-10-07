@@ -1,4 +1,14 @@
-.Main {
+.Wrapper {
+  height: 100%;
   display: flex;
-  color: red;
+  flex-wrap: wrap;
+  .About {
+    padding: 10px;
+    margin-left: 5px;
+  }
+  p {
+    font-size: 1.2rem;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+  }
 }

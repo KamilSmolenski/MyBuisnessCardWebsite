@@ -1,12 +1,17 @@
-import React from "react";
-import "../styles/Me.scss";
+import React from 'react'
+import '../styles/Me.scss'
+import MyPhoto from '../me.jpeg'
 const Me = () => {
   return (
-    <div className="Main">
-      <h1>JA i w ogole</h1>
-      <h2>JAva Script programmer</h2>
+    <div className='Wrapper'>
+      <img src={MyPhoto} alt='' />
+      <div className='About'>
+        <p>Kamil Smoleński</p>
+        <p>Web Developer </p>
+        <p>JavaScript Programmer</p>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Me;
+export default Me

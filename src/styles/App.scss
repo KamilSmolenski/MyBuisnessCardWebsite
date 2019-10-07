@@ -7,55 +7,90 @@
 .Page {
   min-height: 100vh;
   background-color: #111111;
-}
 
-header {
-  background-color: #111;
-  height: 70px;
-  nav {
+  header {
+    background-color: #111;
+    height: 70px;
     width: 100%;
-    height: 100%;
-    display: flex;
-    text-align: center;
-    font-size: 1.3rem;
-    border-bottom: 0.5px solid white;
-    @media (max-width: 360px) {
-      font-size: 1.1rem;
+    nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      text-align: center;
+      font-size: 1.3rem;
+      border-bottom: 0.5px solid white;
+      @media (max-width: 360px) {
+        font-size: 0.7rem;
+      }
+    }
+    ul {
+      display: flex;
+      flex-basis: 100vw;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+
+      li {
+        flex-basis: 30vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 4px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        font-size: 1.4rem;
+      }
+
+      a.active {
+        font-size: 1.7rem;
+        border-bottom: solid white 1px;
+        letter-spacing: 7px;
+        @media (max-width: 360px) {
+          font-size: 1rem;
+        }
+      }
     }
   }
-  ul {
+
+  .main {
     display: flex;
-    flex-basis: 100vw;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-
-    li {
-      flex-basis: 30vw;
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 4px;
-      border-left: solid white 1px;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between;
+    min-height: 80vh;
+    font-size: 0.9rem;
+    @media (max-width: 321px) {
+      font-size: 10px;
     }
 
-    a {
-      text-decoration: none;
+    @media (max-width: 480px) {
+      font-size: 10px;
     }
-    a:hover {
-      font-size: 1.4rem;
+
+    section {
+      font-family: "Work Sans", sans-serif;
+      width: 65vw;
+      text-align: center;
+      margin: 50px auto;
+      background-color: red;
+      min-height: 80vh;
+      padding: 10px;
     }
-    a.active {
-      font-size: 1.7rem;
-      border-bottom: solid white 1px;
-      letter-spacing: 7px;
+
+    aside {
+      margin: 50px auto;
+      width: 20vw;
+      height: 50vh;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    img {
+      width: 100%;
+      height: auto;
     }
   }
-}
-
-section {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 900;
-  width: 50vw;
-  text-align: center;
-  margin: 50px auto;
 }

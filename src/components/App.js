@@ -27,12 +27,14 @@ function App() {
             </ul>
           </nav>
         </header>
-        <aside> {<Me />} </aside>
-        <section>
-          <Route path="/" exact component={Home} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-        </section>
+        <div className="main">
+          <aside> {<Me />} </aside>
+          <section>
+            <Route path="/" exact component={Home} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+          </section>
+        </div>
       </div>
     </BrowserRouter>
   );
