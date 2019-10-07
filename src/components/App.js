@@ -1,38 +1,41 @@
-import React from 'react'
-import '../styles/App.scss'
-import { BrowserRouter, Link, Route } from 'react-router-dom'
-import Home from "./Home.js"
-import Contact from "./Contact.js"
-import Projects from "./Projects.js"
+import React from "react";
+import "../styles/App.scss";
+import { BrowserRouter, NavLink, Route } from "react-router-dom";
+import Home from "./Home.js";
+import Contact from "./Contact.js";
+import Projects from "./Projects.js";
+import Me from "./Me.js";
 
-
-function App () {
+function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="Page">
         <header>
           <nav>
             <ul>
               <li>
-                <Link to='/'>Home</Link>
+                <NavLink to="/" exact>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to='/projects'>Projects</Link>
+                <NavLink to="/projects">Projects</NavLink>
               </li>
               <li>
-                <Link to='/contact'>Contact</Link>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
           </nav>
         </header>
+        <aside> {<Me />} </aside>
         <section>
-          <Route path='/' exact component={Home} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/contact' component={Contact} />
+          <Route path="/" exact component={Home} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
         </section>
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
