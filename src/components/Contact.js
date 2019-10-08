@@ -1,5 +1,10 @@
-import React from "react"
+import React from "react";
+import Form from "./Form.js";
 
-const Contact = () => <h1>Stay tunned</h1>
+const Contact = () => (
+  <div className="mainContact">
+    <Form />
+  </div>
+);
 
-export default Contact 
+export default Contact;
