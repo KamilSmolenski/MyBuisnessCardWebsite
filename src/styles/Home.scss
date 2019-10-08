@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 1.2rem;
+    line-height: 3rem;
+    letter-spacing: 0.045rem;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    background-color: #222;
+    padding: 0.2rem;
+  }
+  .ToolList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    p {
+      line-height: 3rem;
+      font-size: 1.1rem;
+      i {
+        margin: 0px 0.2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,22 +1,35 @@
-import React from "react";
+import React from 'react'
+import '../styles/Home.scss'
 
 const Home = () => (
-  <h3>
-    About me: <br />
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ducimus
-    doloribus repellendus delectus iure voluptate quas rerum. Rem necessitatibus
-    reiciendis qui? Harum, nisi rem delectus quidem voluptas aliquid cum
-    enim!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Temporibus, ut voluptatum facere, similique labore ea placeat quia
-    consectetur perspiciatis eveniet enim? Eius in molestias unde aperiam
-    consequuntur fuga soluta libero?Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Tempore hic molestiae dolore fugiat beatae saepe delectus
-    quas. Aliquam sit in, ex obcaecati aliquid, iure perferendis animi,
-    repudiandae inventore molestias natus!Lorem Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Nostrum, laudantium cupiditate. Blanditiis
-    quia eius placeat vel sed veniam aut totam quae! Error possimus velit
-    numquam corporis laudantium illum quia laboriosam.
-  </h3>
-);
+  <main>
+    <h1>Technologies and tools:</h1>
+    {/* GOOGLE AND STACKOVERFLOW :) */}
+    <div className='ToolList'>
+      <p>
+        <i class='fab fa-css3' />
+        CSS3 + <i class='fab fa-sass' /> SASS + <br />
+        <i class='fab fa-bootstrap' />
+        Bootstrap + BEM
+      </p>
+      <p>
+        <i class='fab fa-js-square' />
+        Java Script + <i class='fab fa-react' />
+        React + jQuery
+      </p>
+      <p>
+        <i class='fab fa-npm' />
+        NPM + <i class='fab fa-yarn' />
+        Yarn
+      </p>
+      <p>
+        <i class='fab fa-git' />
+        GIT + <i class='fab fa-github' />
+        GitHub
+      </p>
+      <p>Gimp</p>
+    </div>
+  </main>
+)
 
-export default Home;
+export default Home
