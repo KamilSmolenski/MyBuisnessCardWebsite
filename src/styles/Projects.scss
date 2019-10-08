@@ -1,7 +1,6 @@
-main.Home {
+main.Projects {
   display: flex;
   flex-direction: column;
-
   h1 {
     font-size: 1.2rem;
     line-height: 3rem;
@@ -11,17 +10,19 @@ main.Home {
     background-color: #222;
     padding: 0.2rem;
   }
-  .ToolList {
-    display: flex;
-    flex-direction: column;
+  .ProjectsItem {
+    padding: 20px;
     margin-top: 1rem;
+    border-bottom: white solid 1px;
+    border: white 1px solid;
+    border-radius: 10%;
     p {
-      line-height: 3rem;
+      margin: 1rem auto;
       font-size: 1.1rem;
-      i {
-        margin: 0px 0.2rem;
-        font-size: 1.5rem;
-      }
+      text-transform: uppercase;
+    }
+    img {
+      border-radius: 5%;
     }
   }
 }

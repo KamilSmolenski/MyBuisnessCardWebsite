@@ -2,8 +2,8 @@ import React from 'react'
 import '../styles/Home.scss'
 
 const Home = () => (
-  <main>
-    <h1>Technologies and tools:</h1>
+  <main className='Home'>
+    <h1>Technologies and tools</h1>
     {/* GOOGLE AND STACKOVERFLOW :) */}
     <div className='ToolList'>
       <p>
