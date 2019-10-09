@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/App.scss";
-import { BrowserRouter, NavLink, Route } from "react-router-dom";
+import { HashRouter, NavLink, Route } from "react-router-dom";
 import Home from "./Home.js";
 import Contact from "./Contact.js";
 import Projects from "./Projects.js";
@@ -8,7 +8,7 @@ import Me from "./Me.js";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="Page">
         <header>
           <nav>
@@ -36,7 +36,7 @@ function App() {
           </section>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
