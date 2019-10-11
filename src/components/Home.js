@@ -4,8 +4,9 @@ import "../styles/Home.scss";
 const Home = () => (
   <main className="Home">
     <h1>Technologies and tools</h1>
-    {/* GOOGLE AND STACKOVERFLOW :) */}
     <div className="ToolList">
+          {/* GOOGLE AND STACKOVERFLOW :) */}
+
       <p>
         <i className="fab fa-css3" />
         CSS3 + <i className="fab fa-sass" /> SASS + <br />
